@@ -3,16 +3,18 @@ package com.SimpleChat.Messages.Chat;
 import java.io.Serializable;
 
 public class ChatMessage implements Serializable {
-
+    private String chatroomName;
     private String message;
     private Object attachment;
 
-    public ChatMessage(String message) {
+    public ChatMessage(String chatroomName, String message) {
+        this.chatroomName = chatroomName;
         this.message = message;
         attachment = null;
     }
 
-    public ChatMessage(String message, Object attachment) {
+    public ChatMessage(String chatroomName, String message, Object attachment) {
+        this.chatroomName = chatroomName;
         this.message = message;
         this.attachment = attachment;
     }

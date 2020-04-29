@@ -2,10 +2,10 @@ package com.SimpleChat.Messages.Login;
 
 import java.io.Serializable;
 
-public class SignUpResponse implements Serializable, Login {
+public class LoginResponse implements Serializable, Login {
     private boolean isSuccess;
 
-    public SignUpResponse(boolean isSuccess) {
+    public LoginResponse(boolean isSuccess) {
         this.isSuccess = isSuccess;
     }
 
