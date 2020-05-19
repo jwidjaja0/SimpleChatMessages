@@ -4,25 +4,16 @@ import com.SimpleChat.Messages.Interfaces.Login;
 
 import java.io.Serializable;
 
-public class SignUpResponse implements Serializable, Login {
-    private boolean isSuccess;
+public class SignUpFail implements Serializable, Login {
+
     private int failCause;
 
     //Fail Cause:
     //0: no error
     //-1: username already exist
 
-    public SignUpResponse(boolean isSuccess) {
-        this.isSuccess = isSuccess;
+    public SignUpFail() {
         failCause = 0;
-    }
-
-    public boolean isSuccess() {
-        return isSuccess;
-    }
-
-    public void setSuccess(boolean success) {
-        isSuccess = success;
     }
 
     public int getFailCause() {
