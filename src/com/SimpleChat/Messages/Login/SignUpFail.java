@@ -13,7 +13,11 @@ public class SignUpFail implements Serializable, Login {
     //-1: username already exist
 
     public SignUpFail() {
-        failCause = 0;
+        this(0);
+    }
+
+    public SignUpFail(int failCause) {
+        this.failCause = failCause;
     }
 
     public int getFailCause() {

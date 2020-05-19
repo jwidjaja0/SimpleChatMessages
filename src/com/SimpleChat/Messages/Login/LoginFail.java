@@ -6,9 +6,8 @@ import java.io.Serializable;
 
 public class LoginFail implements Serializable, Login {
     private int failCause;
-    public final int USERNAME_NONEXIST = -1;
-    public final int WRONG_PASSWORD = -2;
-    public final int INACTIVE_ACC = -3;
+    public final int WRONG_PASSWORD = -1;
+    public final int INACTIVE_ACC = -2;
 
     /*fail causes:
     0: unknown
@@ -30,4 +29,5 @@ public class LoginFail implements Serializable, Login {
     public void setFailCause(int failCause) {
         this.failCause = failCause;
     }
+
 }
