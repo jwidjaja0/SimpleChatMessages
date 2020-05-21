@@ -1,8 +1,10 @@
 package com.SimpleChat.Messages.Chat;
 
+import com.SimpleChat.Messages.Interfaces.Chat;
+
 import java.io.Serializable;
 
-public class ChatMessage implements Serializable {
+public class ChatMessage implements Serializable, Chat {
     private String chatroomName;
     private String message;
     private Object attachment;
