@@ -21,6 +21,10 @@ public class ChatMessage implements Serializable, Chat {
         this.attachment = attachment;
     }
 
+    public String getChatroomName() {
+        return chatroomName;
+    }
+
     public String getMessage() {
         return message;
     }
