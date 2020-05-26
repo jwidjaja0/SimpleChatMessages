@@ -7,32 +7,37 @@ import java.io.Serializable;
 import java.util.List;
 
 public class NewChatroomSuccess implements Serializable, Chat {
-    //TODO:Fill with appropriate fields
-    private ChatroomDetail chatroomDetail;
-    private List<ChatMessage> chatMessageList;
-    private List<User> userList;
+    private String roomID;
+    private String name;
+    private String password;
 
-    public ChatroomDetail getChatroomDetail() {
-        return chatroomDetail;
+    public NewChatroomSuccess(String roomID, String name, String password) {
+        this.roomID = roomID;
+        this.name = name;
+        this.password = password;
     }
 
-    public void setChatroomDetail(ChatroomDetail chatroomDetail) {
-        this.chatroomDetail = chatroomDetail;
+    public String getRoomID() {
+        return roomID;
     }
 
-    public List<ChatMessage> getChatMessageList() {
-        return chatMessageList;
+    public void setRoomID(String roomID) {
+        this.roomID = roomID;
     }
 
-    public void setChatMessageList(List<ChatMessage> chatMessageList) {
-        this.chatMessageList = chatMessageList;
+    public String getName() {
+        return name;
     }
 
-    public List<User> getUserList() {
-        return userList;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setUserList(List<User> userList) {
-        this.userList = userList;
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

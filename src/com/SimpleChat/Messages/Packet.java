@@ -24,4 +24,16 @@ public class Packet implements Serializable {
     public Serializable getMessage() {
         return message;
     }
+
+    public void setMessageType(String messageType) {
+        this.messageType = messageType;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
+
+    public void setMessage(Serializable message) {
+        this.message = message;
+    }
 }
