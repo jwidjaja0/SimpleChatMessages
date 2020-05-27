@@ -6,8 +6,22 @@ import java.io.Serializable;
 
 public class UserInfo implements Serializable, User {
     private String nickname;
+    private String clientID;
 
     public UserInfo() {
+    }
+
+    public UserInfo(String nickname, String clientID) {
+        this.nickname = nickname;
+        this.clientID = clientID;
+    }
+
+    public String getClientID() {
+        return clientID;
+    }
+
+    public void setClientID(String clientID) {
+        this.clientID = clientID;
     }
 
     public String getNickname() {
