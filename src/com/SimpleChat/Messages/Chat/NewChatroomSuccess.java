@@ -1,19 +1,17 @@
 package com.SimpleChat.Messages.Chat;
 
 import com.SimpleChat.Messages.Interfaces.Chat;
-import com.SimpleChat.Messages.Interfaces.User;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class NewChatroomSuccess implements Serializable, Chat {
     private String roomID;
-    private String name;
+    private String roomName;
     private String password;
 
-    public NewChatroomSuccess(String roomID, String name, String password) {
+    public NewChatroomSuccess(String roomID, String roomName, String password) {
         this.roomID = roomID;
-        this.name = name;
+        this.roomName = roomName;
         this.password = password;
     }
 
@@ -25,12 +23,12 @@ public class NewChatroomSuccess implements Serializable, Chat {
         this.roomID = roomID;
     }
 
-    public String getName() {
-        return name;
+    public String getRoomName() {
+        return roomName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRoomName(String roomName) {
+        this.roomName = roomName;
     }
 
     public String getPassword() {
