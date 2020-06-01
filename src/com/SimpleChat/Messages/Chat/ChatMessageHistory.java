@@ -8,5 +8,7 @@ import java.util.List;
 public class ChatMessageHistory implements Serializable, Chat {
     private List<ChatMessage> chatMessageList;
 
-
+    public List<ChatMessage> getChatMessageList() {
+        return chatMessageList;
+    }
 }

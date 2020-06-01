@@ -1,6 +1,10 @@
 package com.SimpleChat.Messages.Chat;
 
-public class ChatroomDetail {
+import com.SimpleChat.Messages.Interfaces.Chat;
+
+import java.io.Serializable;
+
+public class ChatroomDetail implements Serializable, Chat {
     private String chatroomName;
     private String roomID;
 
