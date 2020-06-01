@@ -6,11 +6,11 @@ import com.SimpleChat.Messages.User.UserInfo;
 import java.io.Serializable;
 
 public class LoginSuccess implements Serializable, Login {
-    private String clientID;
+
     private UserInfo userInfo;
 
-    public LoginSuccess(String clientID) {
-        this.clientID = clientID;
+    public LoginSuccess(UserInfo userInfo) {
+        this.userInfo = userInfo;
     }
 
     public UserInfo getUserInfo() {
@@ -19,10 +19,6 @@ public class LoginSuccess implements Serializable, Login {
 
     public void setUserInfo(UserInfo userInfo) {
         this.userInfo = userInfo;
-    }
-
-    public String getClientID() {
-        return clientID;
     }
 
     @Override

@@ -16,6 +16,13 @@ public class UserInfo implements Serializable, User {
         this.clientID = clientID;
     }
 
+    @Override
+    public String toString() {
+        return
+                "nickname='" + nickname + '\'' +
+                ", clientID='" + clientID + '\'';
+    }
+
     public String getClientID() {
         return clientID;
     }
