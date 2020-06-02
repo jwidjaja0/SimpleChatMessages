@@ -15,6 +15,11 @@ public class NewChatroomSuccess implements Serializable, Chat {
         this.password = password;
     }
 
+    @Override
+    public String toString() {
+        return "ID: " + roomID + " Name: " + roomName;
+    }
+
     public String getRoomID() {
         return roomID;
     }
